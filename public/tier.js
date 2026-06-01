@@ -14,7 +14,7 @@ async function initTier(){
           <h3>${content.patch || "Patch actual"}</h3>
           <span class="chip">${(content.mapPool || []).join(" · ")}</span>
         </div>
-        <p class="subtitle">Ranking orientativo para ranked/competitivo. Ajusta según composición y comodidad, porque por desgracia todavía no existe botón para ganar solo.</p>
+        <p class="subtitle">Ranking orientativo para ranked/competitivo.</p>
       </div>
     </article>
   ` + Object.entries(content.tiers).map(([tier,names])=>`

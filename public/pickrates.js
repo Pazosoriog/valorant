@@ -6,8 +6,6 @@ const avatars = [
   "/avatars/dog5.jpg",
   "/avatars/dog6.jpg",
   "/avatars/dog7.jpg",
-  "/miks.jpg",
-  "/veto.gif"
 ];
 
 function getRandomAvatar() {

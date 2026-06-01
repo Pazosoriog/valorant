@@ -52,48 +52,7 @@ Ejemplo:
 
 ## Deploy
 
-Netlify sirve el frontend estatico, pero no corre este backend Node/Express tal cual. El backend va en Render.
-
-### Backend en Render
-
-1. Sube el proyecto a GitHub.
-2. En Render crea `New -> Web Service`.
-3. Conecta el repositorio.
-4. Configura:
-
-```txt
-Build Command: npm install
-Start Command: npm start
-```
-
-5. Agrega estas variables de entorno:
-
-```env
-HENRIK_API_KEY=tu_key
-PORT=8080
-```
-
-Render entregara una URL parecida a:
-
-```txt
-https://valorant-backend.onrender.com
-```
-
-### Frontend en Netlify
-
-Este repo incluye `netlify.toml` para publicar la carpeta `public`.
-
-Antes de desplegar en Netlify, edita `public/config.js` y pon la URL real de Render:
-
-```js
-window.VALORANT_API_BASE_URL = "https://valorant-backend.onrender.com";
-```
-
-Para desarrollo local dejalo vacio:
-
-```js
-window.VALORANT_API_BASE_URL = "";
-```
+Para backend usa Render, Railway, Fly.io o Vercel. Netlify normal sirve páginas estáticas, no este servidor Express completo.
 
 
 ## Nuevo

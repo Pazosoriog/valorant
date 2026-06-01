@@ -19,7 +19,7 @@ const results = document.querySelector("#results");
 const statusBox = document.querySelector("#status");
 
 async function checkHealth() {
-  const res = await fetch(apiUrl("/api/health"));
+  const res = await fetch("/api/health");
   const data = await res.json();
   statusBox.innerHTML = `<strong>API</strong><span class="chip">Modo: ${data.mode}</span>`;
 }
@@ -179,7 +179,7 @@ form.addEventListener("submit", async (e) => {
 
   results.innerHTML = `<p class="subtitle">Buscando perfil competitivo y rango...</p>`;
 
-  const res = await fetch(apiUrl(`/api/pickrates/${encodeURIComponent(region)}/${encodeURIComponent(name)}/${encodeURIComponent(tag)}?size=10`));
+  const res = await fetch(`/api/pickrates/${encodeURIComponent(region)}/${encodeURIComponent(name)}/${encodeURIComponent(tag)}?size=10`);
   const json = await res.json();
 
   if (!res.ok) {

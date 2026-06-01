@@ -26,7 +26,7 @@ function renderMaps(){
     return `<article class="card"><img class="map-img" src="${map.splash}" alt="${map.displayName}"><div class="body"><div class="title"><h3>${map.displayName}</h3><span class="chip">${picks.length} picks</span></div><div class="agents">${picks.map(a=>agentCard(a.displayName)).join("")}</div></div></article>`
   }).join("")
 }
-async function init(){const res=await fetch(apiUrl("/api/content"));state.content=await res.json();agentCount.textContent=state.content.agents.length;renderMaps()}
+async function init(){const res=await fetch("/api/content");state.content=await res.json();agentCount.textContent=state.content.agents.length;renderMaps()}
 searchInput?.addEventListener("input",e=>{state.query=e.target.value;renderMaps()});
 roleFilter?.addEventListener("change",e=>{state.role=e.target.value;roleButtons.forEach(btn=>btn.classList.toggle("active",btn.dataset.role===state.role));renderMaps()});
 roleButtons.forEach(btn=>btn.addEventListener("click",()=>{state.role=btn.dataset.role;if(roleFilter)roleFilter.value=state.role;roleButtons.forEach(b=>b.classList.toggle("active",b===btn));renderMaps()}));

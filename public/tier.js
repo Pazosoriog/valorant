@@ -1,5 +1,5 @@
 async function initTier(){
-  const res=await fetch(apiUrl("/api/content"));
+  const res=await fetch("/api/content");
   const content=await res.json();
   const grid=document.querySelector("#tierGrid");
 

@@ -18,7 +18,7 @@ const HENRIK_API = "https://api.henrikdev.xyz/valorant/v3";
 const manualPicks = {
   Ascent: ["Sova", "Omen", "Jett", "Killjoy", "KAY/O","Cypher","Brimstone", "waylay"],
   Breeze: ["Viper", "Sova","Omen", "Jett", "KAY/O", "Waylay", "Neon", "Cypher", "Harbor"],
-  Fracture: ["Raze", "Breach", "Brimstone", "Killjoy", "Neon", "Tejo", "Omen","cypher","raze"],
+  Fracture: ["Raze", "Breach", "Brimstone", "Killjoy", "Neon", "Tejo", "Omen","cypher","Jett"],
   Haven: ["Omen", "Sova", "Cypher", "Breach", "Jett", "Astra", "Iso", "Killjoy", "Waylay"],
   Lotus: ["Raze", "Fade", "Omen", "Vyse", "Breach", "Astra", "Brimstone", "Cypher"],
   Pearl: ["Sova", "Gekko", "Killjoy", "Omen", "jett", "Chamber", "Waylay", "Vyse"],

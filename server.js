@@ -16,13 +16,13 @@ const VALORANT_API = "https://valorant-api.com/v1";
 const HENRIK_API = "https://api.henrikdev.xyz/valorant/v3";
 
 const manualPicks = {
-  Ascent: ["Sova", "Omen", "Jett", "Killjoy", "KAY/O"],
-  Breeze: ["Viper", "Sova", "Jett", "Cypher", "Harbor"],
-  Fracture: ["Raze", "Breach", "Brimstone", "Killjoy", "Neon"],
-  Haven: ["Omen", "Sova", "Cypher", "Breach", "Jett"],
-  Lotus: ["Raze", "Fade", "Omen", "Killjoy", "Gekko"],
-  Pearl: ["Astra", "Viper", "Killjoy", "Fade", "Yoru"],
-  Split: ["Raze", "Omen", "Cypher", "Skye", "Sage"]
+  Ascent: ["Sova", "Omen", "Jett", "Killjoy", "KAY/O","Cypher","Brimstone"],
+  Breeze: ["Viper", "Sova","Omen", "Jett", "KAY/O", "Waylay", "Neon", "Cypher", "Harbor"],
+  Fracture: ["Raze", "Breach", "Brimstone", "Killjoy", "Neon", "Tejo", "Omen","cypher"],
+  Haven: ["Omen", "Sova", "Cypher", "Breach", "Jett", "Astra", "Iso", "Killjoy", "Waylay"],
+  Lotus: ["Raze", "Fade", "Omen", "Vyse", "Breach", "Astra", "Brimstone", "Cypher"],
+  Pearl: ["Sova", "Gekko", "Killjoy", "Omen", "jett", "Chamber", "Waylay", "Vyse"],
+  Split: ["Chamber", "Omen", "Cypher", "Skye", "Astra","Breach", "Jett", "Harbor", "Raze"]
 };
 
 const tiers = {

@@ -56,11 +56,6 @@ async function getContent() {
       fullPortrait: a.fullPortrait || a.displayIcon,
     }));
 
-  agents.push(
-    { displayName: "Veto", role: "Centinela", displayIcon: "/veto.gif", fullPortrait: "/veto.gif" },
-    { displayName: "Miks", role: "Controlador", displayIcon: "/miks.jpg", fullPortrait: "/miks.jpg" }
-  );
-
   const maps = mapsJson.data
     .filter(m => m.displayName && m.splash)
     .map(m => ({ displayName: m.displayName, splash: m.splash }));
